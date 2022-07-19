@@ -20,10 +20,9 @@ public class Regiao {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @ManyToOne
-    @JoinColumn(name = "Uf_id")
-    private Uf UF;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "regiao")
-    private List<Faixa> faixas = new ArrayList<>();
+    private String regiao;
+
+    @ManyToOne
+    private Uf uf;
 }

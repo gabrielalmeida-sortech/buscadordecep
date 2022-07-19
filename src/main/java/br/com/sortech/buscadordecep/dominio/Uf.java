@@ -22,7 +22,5 @@ public class Uf {
     private Long id;
 
     private String uf;
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "UF")
-    private List<Regiao> regioes = new ArrayList<>();
 
 }

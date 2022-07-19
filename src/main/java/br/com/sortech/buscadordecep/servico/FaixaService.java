@@ -1,15 +1,16 @@
 package br.com.sortech.buscadordecep.servico;
-
-import br.com.sortech.buscadordecep.dominio.Faixa;
-
+import java.util.ArrayList;
 import java.util.List;
 
 public class FaixaService {
 
-    public List<Faixa> SalvarFaixasDeCep (int faixaInicial, int faixaFinal) {
-        for (int i = faixaInicial; i <= faixaFinal; i++) {
+    public List<Long> CalcularFaixasDeCep (long faixaInicial, long faixaFinal) {
+        List<Long> totalDeFaixas = new ArrayList<>();
 
+        for (long i = faixaInicial; i <= faixaFinal; i++) {
+            totalDeFaixas.add(i);
         }
+        return totalDeFaixas;
     }
 
 }

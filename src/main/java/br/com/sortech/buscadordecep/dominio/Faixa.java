@@ -20,7 +20,6 @@ public class Faixa {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "regiao_id")
     private Regiao regiao;
 
     private long faixaInicial;
