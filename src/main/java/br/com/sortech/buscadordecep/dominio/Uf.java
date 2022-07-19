@@ -14,15 +14,15 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "estado")
-public class Estado {
+@Table(name = "UF")
+public class Uf {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String estado;
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "estado")
+    private String uf;
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "UF")
     private List<Regiao> regioes = new ArrayList<>();
 
 }

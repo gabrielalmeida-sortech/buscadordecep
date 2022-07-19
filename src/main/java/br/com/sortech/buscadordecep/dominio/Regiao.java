@@ -21,8 +21,8 @@ public class Regiao {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
-    @JoinColumn(name = "estado_id")
-    private Estado estado;
+    @JoinColumn(name = "Uf_id")
+    private Uf UF;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "regiao")
     private List<Faixa> faixas = new ArrayList<>();
