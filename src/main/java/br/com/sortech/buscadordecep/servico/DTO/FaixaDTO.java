@@ -15,7 +15,8 @@ import java.io.Serializable;
 public class FaixaDTO implements Serializable {
 
     private Long id;
-    private Regiao regiao;
+    private String uf;
+    private String ibge;
     private long faixaInicial;
     private long faixaFinal;
 

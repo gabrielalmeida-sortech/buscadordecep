@@ -18,10 +18,8 @@ public class Faixa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @ManyToOne
-    private Regiao regiao;
-
+    private String uf;
+    private String ibge;
     private long faixaInicial;
     private long faixaFinal;
 }
