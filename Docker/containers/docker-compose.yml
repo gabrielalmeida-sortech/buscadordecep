@@ -1,0 +1,7 @@
+version: '2'
+services:
+  Buscarcep:
+    extends:
+      file: postgres/postgres.yml
+      service: Buscarcep
+    container_name: Buscarcep

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: buscadordecep
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/buscarcep
+    username: root
+    password:
+  liquibase:
+    change-log: classpath:/config/liquibase/master.xml
+#    drop-first: true

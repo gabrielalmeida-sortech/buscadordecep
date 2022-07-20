@@ -1,0 +1,10 @@
+version: '2'
+services:
+  Buscarcep:
+    image: postgres:11.5
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=
+      - POSTGRES_DB=buscarcep
+    ports:
+      - 5432:5432
