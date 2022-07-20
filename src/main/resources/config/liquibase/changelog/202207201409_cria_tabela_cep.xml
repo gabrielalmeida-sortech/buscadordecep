@@ -1,0 +1,41 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+    <changeSet id="202207201410" author="Wagner Cardoso">
+        <createTable tableName="ENDERECO">
+            <column name="id" type="INT" autoIncrement="true" remarks="indentica o cep">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="cep" type="VARCHAR(9)" >
+                <constraints nullable="false"/>
+            </column>
+             <column name="logradouro" type="VARCHAR(255)" >
+                <constraints nullable="false"/>
+             </column>
+            <column name="complemento" type="VARCHAR(255)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="bairro" type="VARCHAR(255)" >
+                <constraints nullable="false"/>
+            </column>
+             <column name="uf" type="VARCHAR(2)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="ibge" type="VARCHAR(255)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="gia" type="VARCHAR(255)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="ddd" type="VARCHAR(5)" >
+                <constraints nullable="false"/>
+            </column>
+             <column name="siafi" type="VARCHAR(5)" >
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
