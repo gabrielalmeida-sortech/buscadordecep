@@ -1,0 +1,21 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+x
+Hsrc/main/java/br/com/sortech/buscadordecep/servico/mapper/CepMapper.java,0\4\04e2d5653f3118aa0a503ef69a34f34c405d40e0
+w
+Gsrc/main/java/br/com/sortech/buscadordecep/servico/mapper/UfMapper.java,b\f\bf6965959254c406eb70162885ed7a56e11574f3
+u
+Esrc/main/java/br/com/sortech/buscadordecep/servico/RegiaoService.java,5\2\527771e07ce41734b8beb183c7183af18e1d1fa1
+q
+Asrc/main/java/br/com/sortech/buscadordecep/servico/UfService.java,a\7\a7b79d1696130f6ad14a3cf12a1bf5f575e42025
+s
+Csrc/main/java/br/com/sortech/buscadordecep/web/rest/CepRecurso.java,d\d\dd1e914d164e4d130a6724c53c311ef90834bd14
+W
+'Docker/containers/postgres/postgres.yml,d\1\d140f510096a43a29190309c7b7b71a88f08e2a9
+T
+$Docker/containers/docker-compose.yml,6\6\66e77cfd9cfb92ad5268d941c7a30b25dd890b43
+t
+Dsrc/main/java/br/com/sortech/buscadordecep/servico/FaixaService.java,7\3\73b03fda2dfdb0768ea114769d938771b05bfe9e

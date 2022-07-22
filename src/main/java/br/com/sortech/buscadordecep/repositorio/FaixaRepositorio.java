@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 public interface FaixaRepositorio extends JpaRepository<Faixa, Long>, JpaSpecificationExecutor<Faixa> {
 
-    boolean existsByFaixa(Long faixa);
+//    boolean existsByFaixa(Long faixa);
 }
