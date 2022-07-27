@@ -6,20 +6,25 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.LinkedHashMap;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "faixa")
-public class Faixa {
+@Table(name = "UF")
+public class UF {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String nome;
 
-    private long faixaInicial;
-    private long faixaFinal;
+    private String sigla;
+
+    @ManyToOne
+    @JoinColumn(name = "regiao_id")
+    private Regiao regiao;
+
 }

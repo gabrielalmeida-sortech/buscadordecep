@@ -12,14 +12,18 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "faixa")
-public class Faixa {
+@Table(name = "distrito")
+public class Distrito {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
     private Long id;
 
+    private String nome;
 
-    private long faixaInicial;
-    private long faixaFinal;
+    @ManyToOne
+    @JoinColumn(name = "municipio_id")
+    private Municipio municipio;
+
+
 }

@@ -36,7 +36,6 @@ public class CepRecurso {
     @PostMapping
     public ResponseEntity<CepDTO> salvar(@RequestBody CepDTO cepDTO) throws Exception {
 
-
         return ResponseEntity.ok(cepService.salvar(cepDTO));
     }
     @PutMapping(value = "/{id}")

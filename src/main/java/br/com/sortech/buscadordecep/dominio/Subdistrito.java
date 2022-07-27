@@ -1,5 +1,6 @@
 package br.com.sortech.buscadordecep.dominio;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,14 +13,16 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "faixa")
-public class Faixa {
+@Table(name = "subdistrito")
+public class Subdistrito {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
     private Long id;
 
+    private String nome;
 
-    private long faixaInicial;
-    private long faixaFinal;
+    @ManyToOne
+    @JoinColumn(name = "distrito_id")
+    private Distrito distrito;
 }
