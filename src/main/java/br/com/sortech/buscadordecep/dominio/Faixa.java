@@ -18,7 +18,9 @@ public class Faixa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String uf;
+    @ManyToOne
+    @JoinColumn(name = "uf_id")
+    private UF uf;
     private String ibge;
     private long faixaInicial;
     private long faixaFinal;

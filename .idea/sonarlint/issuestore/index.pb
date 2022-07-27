@@ -11,8 +11,6 @@ u
 Esrc/main/java/br/com/sortech/buscadordecep/servico/RegiaoService.java,5\2\527771e07ce41734b8beb183c7183af18e1d1fa1
 q
 Asrc/main/java/br/com/sortech/buscadordecep/servico/UfService.java,a\7\a7b79d1696130f6ad14a3cf12a1bf5f575e42025
-s
-Csrc/main/java/br/com/sortech/buscadordecep/web/rest/CepRecurso.java,d\d\dd1e914d164e4d130a6724c53c311ef90834bd14
 W
 'Docker/containers/postgres/postgres.yml,d\1\d140f510096a43a29190309c7b7b71a88f08e2a9
 T
