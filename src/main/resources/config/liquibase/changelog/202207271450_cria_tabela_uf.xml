@@ -1,0 +1,22 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+    <changeSet id="202207271452" author="Gabriel Almeida">
+        <createTable tableName="UF">
+            <column name="id" type="INT" autoIncrement="true" remarks="chave primaria do UF">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="nome" type="VARCHAR(255)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="sigla" type="VARCHAR(2)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="regiao_id" type="int" >
+                <constraints nullable="false" foreignKeyName="regiao"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

@@ -5,7 +5,16 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
-
     <include file="config/liquibase/changelog/202207201409_cria_tabela_cep.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202207271152_cria_tabela_distrito.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202207271159_cria_tabela_faixa.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202207271205_cria_tabela_mesorregiao.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202207271209_cria_tabela_microrregiao.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202207271213_cria_tabela_municipio.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202207271218_cria_tabela_regiao.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202207271438_cria_tabela_regiao_imediata.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202207271442_cria_tabela_regiao_intermediaria.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202207271447_cria_tabela_subdistrito.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/202207271450_cria_tabela_uf.xml" relativeToChangelogFile="false"/>
 
 </databaseChangeLog>
